@@ -92,7 +92,7 @@
  
         // Subscribe to your channel and bind to events here
         var channel = pusher.subscribe('support-requests');
-        channel.bind('SupportRequestReceived', function(data) {
+        channel.bind('my-event', function(data) {
             console.log(data);
             var requestHtml = `
                 <tr>
